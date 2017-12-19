@@ -9,6 +9,7 @@
     <body>
         <header>
             <div class="nav__wrapper">
+              
                <div class="nav__top">
                     <a class="nav__logo" href="#"><img class="logo" src="components/nav/src/logo.png" alt="logo_icon"></a>
                 <div class="nav__dodatki">
@@ -23,10 +24,31 @@
                         <a class="dodatki--icons" href="#"><img class="contact" id="contact" src="components/nav/src/telefon.png"></a>
                         <a class="dodatki--icons" href="#"><img class="mail" id="mail" src="components/nav/src/mail.png"></a>
                     </div>
+                    <form class="nav__form" action="#" method="post">
+                        <input type="email" name="email" placeholder="login(e-mail)">
+                        <input type="password" name="password" placeholder="hasło">
+                        <button class="login">Zaloguj</button>
+                        <h2>Nie masz konta? Załóż, bo warto!</h2>
+                        <p>Konto w naszym sklepie to wiele korzyści takich jak szybsze zakupy, rabaty, dodatkowe narzędzia sklepowe.</p>
+                        <button class="sign">Załóż konto</button>
+                        <h1>Zakupy bez logowania <img src="components/nav/src/koszyk_bialy.png"></h1>
+                    </form>
+                           
+                        
                 </div>
                </div>
+    <div class="hamburger">
+     <div class="hamburger__icon">
+      <span></span>
+      <span></span>
+      <span></span>
+     </div>
+     <a class="nav__main--special" href="#">Nowości</a>
+     <a class="nav__main--special" href="#">Okazje</a>
+     </div>
                
-                <div class="nav__main">
+                <div class="nav__main" id="nav__mobile">
+                   
                     <a class="nav__main--link" href="#">Kabury</a>
                     <a class="nav__main--link" href="#">Ładownice</a>
                     <a class="nav__main--link" href="#">Akcesoria do broni</a>

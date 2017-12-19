@@ -1,3 +1,10 @@
-.slider--img {
+.banner {
+    padding-top: 100px;
+    @include mQ(920px){
+        padding-top: 200px;
+    }
+    .slider--img {
     width: 100%;
 }
+}
+
