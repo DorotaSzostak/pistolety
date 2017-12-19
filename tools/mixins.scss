@@ -1,0 +1,12 @@
+@mixin mQ($arg){
+    @media screen and (max-width: $arg){
+        @content;
+    }
+}
+
+
+@mixin clearfix {
+    content: "";
+    display: block;
+    clear: both;
+}
