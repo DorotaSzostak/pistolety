@@ -56,8 +56,15 @@
                 padding:15px 0;
                 position: relative;
                 .dodatki--icons {
-                    padding:3% 5%;
+                    padding:4% 5%;
+                    margin-left: -4px;
                 }
+//                .koszyk {
+//                    background-image: url(../components/nav/src/koszyk.png);
+//                    background-repeat:no-repeat;
+//                    background-position: center;
+//                    background-size: contain;
+//                }
             }
             @include mQ(920px){
         width: 100%; 
@@ -216,14 +223,18 @@ span:nth-child(3) {
 
         }
 }
+.nav__form--inactive {
+    display: none;
+}
 
-.nav__form {
+.nav__form--active {
     position: absolute;
     top: 90px;
     width: 310px;
     background-color: $light_green;
     padding-top: 10px;
     text-align: center;
+    display: block;
     input {
         padding: 2% 2%;
         margin-bottom: 10px;
@@ -285,7 +296,6 @@ span:nth-child(3) {
         display: none;
     }
 }
-
 
 
 

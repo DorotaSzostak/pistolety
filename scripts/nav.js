@@ -5,3 +5,12 @@ hamburger.addEventListener("click", function(){
     menu.classList.toggle("nav__responsive");
     this.classList.toggle("open");
 });
+
+
+var koszyk = document.getElementById("koszyk");
+
+koszyk.addEventListener("click", function(){
+    var sign = document.getElementById("form");
+    sign.classList.toggle("nav__form--active");
+});
+

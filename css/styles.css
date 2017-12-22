@@ -107,7 +107,8 @@ input {
         padding: 15px 0;
         position: relative; }
         .nav__wrapper .nav__top .nav__dodatki .nav__dodatki--bottom .dodatki--icons {
-          padding: 3% 5%; }
+          padding: 4% 5%;
+          margin-left: -4px; }
       @media screen and (max-width: 920px) {
         .nav__wrapper .nav__top .nav__dodatki {
           width: 100%;
@@ -230,21 +231,25 @@ input {
           background-color: #505e3c;
           color: #fff; } }
 
-.nav__form {
+.nav__form--inactive {
+  display: none; }
+
+.nav__form--active {
   position: absolute;
   top: 90px;
   width: 310px;
   background-color: #97ac79;
   padding-top: 10px;
-  text-align: center; }
-  .nav__form input {
+  text-align: center;
+  display: block; }
+  .nav__form--active input {
     padding: 2% 2%;
     margin-bottom: 10px;
     width: 80%;
     border: none;
     color: #77787b;
     font-size: 16px; }
-  .nav__form .login {
+  .nav__form--active .login {
     width: 84%;
     padding: 2% 0;
     color: #fff;
@@ -253,7 +258,7 @@ input {
     background-color: #4e565a;
     margin-bottom: 10px;
     border: none; }
-  .nav__form h2 {
+  .nav__form--active h2 {
     width: 84%;
     margin: 0 auto;
     text-align: left;
@@ -262,7 +267,7 @@ input {
     font-weight: bold;
     text-transform: none;
     line-height: 2; }
-  .nav__form p {
+  .nav__form--active p {
     width: 84%;
     margin: 0 auto;
     text-align: left;
@@ -272,7 +277,7 @@ input {
     letter-spacing: 0.5px;
     line-height: 1.5;
     margin-bottom: 10px; }
-  .nav__form .sign {
+  .nav__form--active .sign {
     width: 84%;
     padding: 2% 0;
     color: #fff;
@@ -281,13 +286,13 @@ input {
     background-color: #505e3c;
     margin-bottom: 10px;
     border: none; }
-  .nav__form h1 {
+  .nav__form--active h1 {
     font-size: 24px;
     font-weight: bold;
     color: #fff;
     margin-bottom: 15px; }
   @media screen and (max-width: 920px) {
-    .nav__form {
+    .nav__form--active {
       width: 100%;
       top: 177px;
       display: none; } }
