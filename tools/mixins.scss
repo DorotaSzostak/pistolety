@@ -10,3 +10,14 @@
     display: block;
     clear: both;
 }
+
+@mixin greyBtn {
+        width: 84%;
+        padding: 2% 0;
+        color:#fff;
+        font-size: 14px;
+        font-weight: bold;
+        background-color: #4e565a;
+        margin-bottom: 10px;
+        border: none;
+}
