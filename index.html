@@ -19,11 +19,11 @@
                         <a href="#">Kontakt</a>
                     </div>
                     <div class="nav__dodatki--bottom">
-                        <a class="dodatki--icons koszyk" id="koszyk" href="#"><img class="search" src="components/nav/src/koszyk.png">
+                        <a class="dodatki--icons koszyk" id="koszyk" href="#">
                         </a>
-                        <a class="dodatki--icons lupka" href="#"><img class="search" id="lupka" src="components/nav/src/lupka.png"></a>
-                        <a class="dodatki--icons" href="#"><img class="contact" id="contact" src="components/nav/src/telefon.png"></a>
-                        <a class="dodatki--icons" href="#"><img class="mail" id="mail" src="components/nav/src/mail.png"></a>
+                        <a class="dodatki--icons lupka" id="lupka" href="#"></a>
+                        <a class="dodatki--icons contact" id="contact" href="#"></a>
+                        <a class="dodatki--icons mail" id="mail"  href="#"></a>
                     </div>
                     <form class="nav__logform--inactive" id="form" action="#" method="post">
                         <input type="email" name="email" placeholder="login(e-mail)">
@@ -44,6 +44,20 @@
                         <p class="number">+48 688 988 088</p>
                         <p>kliknij aby zatelefonować</p>
                     </div>
+                    
+                    <form class="nav__askform--inactive" id="ask" action="#" method="post">
+                       <h1>Formularz zapytaniowy</h1>
+                       <input type="text" name="name" placeholder="imię/nazwisko">
+                       <input type="tel" name="phonenumber" placeholder="telefon kontaktowy">
+                        <input type="email" name="email" placeholder="e-mail">
+                        <textarea name="textarea" placeholder="zapytanie"></textarea>
+                        <div class="askform--checkbox">
+                        <input type="checkbox" checked id="polityka" name="accept" value="rules">
+                        <label for="polityka">zapoznałem się i akceptuję Politykę prywatności firmy ARMS4you</label> 
+                        </div>
+                        <button class="grey">Wyślij zapytanie</button>
+                        <h1>Napisz e-mail <img src="components/nav/src/mail_bialy.png"></h1>
+                    </form>
                 </div>
                </div>
     <div class="hamburger">
@@ -58,7 +72,7 @@
                
                 <div class="nav__main" id="nav__mobile">
                    
-                    <a class="nav__main--link" href="#">Kabury</a>
+                    <a class="nav__main--link" id="kabury" href="#">Kabury</a>
                     <a class="nav__main--link" href="#">Ładownice</a>
                     <a class="nav__main--link" href="#">Akcesoria do broni</a>
                     <a class="nav__main--link" href="#">Wyposażenie</a>
@@ -66,6 +80,69 @@
                     <a class="nav__main--link" href="#">Broń i amunicja</a>
                     <a class="nav__main--special" href="#">Nowości</a>
                     <a class="nav__main--special" href="#">Okazje</a>
+                </div>
+                <div class="dropdown" id="dropdown">
+                    <div class="dropdown__section">
+                        <p class="section--category">Pistolety</p>
+                        <a href="#" class="section--link">GLOCK</a>
+                        <a href="#" class="section--link">Heckler&amp;Koch</a>
+                        <a href="#" class="section--link">WORKS 11</a>
+                    </div>
+                <div class="dropdown__section">
+                        <p class="section--category">Karabiny</p>
+                        <a href="#" class="section--link">Buchmaster</a>
+                        <a href="#" class="section--link">GunsHelp</a>
+                        <a href="#" class="section--link">Mossberg</a>
+                        <a href="#" class="section--link">WBP</a>
+                        <a href="#" class="section--link">WORKS 11</a>
+                    </div>
+                <div class="dropdown__section">
+                        <p class="section--category">Strzelby</p>
+                        <a href="#" class="section--link">Mossberg</a>
+                    </div>
+                <div class="dropdown__section">
+                        <p class="section--category">Części do pistoletów</p>
+                        <a href="#" class="section--link">Lufy</a>
+                        <a href="#" class="section--link">Mechanizmy spustowe</a>
+                        <a href="#" class="section--link">Mechanizmy uderzeniowe</a>
+                        <a href="#" class="section--link">Przyrządy celownicze</a>
+                        <a href="#" class="section--link">Sprężyny powrotne</a>
+                        <a href="#" class="section--link">Szkielety</a>
+                        <a href="#" class="section--link">Zamki</a>
+                    </div>
+                <div class="dropdown__section">
+                        <p class="section--category">Części do karabinów</p>
+                        <a href="#" class="section--link">Urządzenia wylotowe</a>
+                        <a href="#" class="section--link">Lufy</a>
+                        <a href="#" class="section--link">Bloki i rury gazowe</a>
+                        <a href="#" class="section--link">Łoża</a>
+                        <a href="#" class="section--link">Części komory zamkowej</a>
+                        <a href="#" class="section--link">Rękojeści przeładowania</a>
+                        <a href="#" class="section--link">Części komory spustowej</a>
+                        <a href="#" class="section--link">Chwyty</a>
+                        <a href="#" class="section--link">Kolby</a>
+                        <a href="#" class="section--link">Przyrządy celownicze</a>
+                        <a href="#" class="section--link">Zestawy do konwersji</a>
+                    </div>
+                    <div class="dropdown__section">
+                        <p class="section--category">Części do strzelb</p>
+                        <a href="#" class="section--link">Czółenka</a>
+                        <a href="#" class="section--link">Kolby</a>
+                        <a href="#" class="section--link">Osłony termiczne</a>
+                        <a href="#" class="section--link">Przyrządy celownicze</a>
+                        <a href="#" class="section--link">Szyny montażowe</a>
+                    </div>
+                    <div class="dropdown__section">
+                        <p class="section--category">Magazynki</p>
+                        <a href="#" class="section--link">AK/AKM</a>
+                        <a href="#" class="section--link">AR-15</a>
+                        <a href="#" class="section--link">AR-308/LR/SR</a>
+                        <a href="#" class="section--link">AUG/F88/F90</a>
+                        <a href="#" class="section--link">G36</a>
+                        <a href="#" class="section--link">GLOCK</a>
+                        <a href="#" class="section--link">P30/SFP9</a>
+                        <a href="#" class="section--link">USP</a>
+                    </div>
                 </div>
             </div>
             <div class="banner">

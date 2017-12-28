@@ -10,6 +10,8 @@ hamburger.addEventListener("click", function(){
 var koszyk = document.getElementById("koszyk");
 var lupka = document.getElementById("lupka");
 var telefon = document.getElementById("contact");
+var koperta = document.getElementById("mail");
+var kabury = document.getElementById("kabury");
 
 koszyk.addEventListener("click", function(){
     var sign = document.getElementById("form");
@@ -22,6 +24,16 @@ lupka.addEventListener("click", function(){
 });
 
 telefon.addEventListener("click", function(){
-    var search = document.getElementById("call");
+    var contact = document.getElementById("call");
     call.classList.toggle("nav__call--active");
 });
+
+koperta.addEventListener("click", function(){
+    var mail = document.getElementById("ask");
+    ask.classList.toggle("nav__askform--active");
+});
+
+kabury.addEventListener("click", function(){
+    var drop = document.getElementById("dropdown");
+    drop.classList.toggle("dropdown--active");
+})

@@ -2,7 +2,6 @@
     width: 100%;
     max-width: 2400px;
     position: fixed;
-    text-transform: uppercase;
     background-color: #fff;
     .nav__top {
         display: flex;
@@ -10,6 +9,7 @@
         justify-content: space-between;
         width: 80%;
         margin: 0 auto;
+        text-transform: uppercase;
         .nav__logo {
             padding-top: 10px;
             @include mQ(920px){
@@ -52,23 +52,75 @@
                 }
             }
             .nav__dodatki--bottom {
-               text-align: center;
+                overflow: hidden;
+                text-align: left;
                 padding:15px 0;
                 position: relative;
                 .dodatki--icons {
-                    padding:4% 5%;
-                    margin-left: -4px;
+                    padding:7% 10%;
                 }
-//                .koszyk {
-//                    background-image: url(../components/nav/src/koszyk.png);
-//                    background-repeat:no-repeat;
-//                    background-position: center;
-//                    background-size: contain;
-//                }
+                .koszyk {
+                    background-image: url(../components/nav/src/koszyk.png);
+                    background-repeat:no-repeat;
+                    background-position: center;
+                    background-size: auto;
+                    transition: background-color 1s;
+                }
+                  .koszyk:hover {
+                    background-color: $light_green;
+                    background-image: url(../components/nav/src/koszyk_bialy.png);
+                    background-repeat:no-repeat;
+                    background-position: center;
+                    background-size: auto;
+                }
+                    .lupka {
+                    background-image: url(../components/nav/src/lupka.png);
+                    background-repeat:no-repeat;
+                    background-position: center;
+                    background-size: auto;
+                    transition: background-color 1s;
+                }
+                  .lupka:hover {
+                    background-color: $light_green;
+                    background-image: url(../components/nav/src/lupka_bialy.png);
+                    background-repeat:no-repeat;
+                    background-position: center;
+                    background-size: auto;
+                }
+                      .contact{
+                    background-image: url(../components/nav/src/telefon.png);
+                    background-repeat:no-repeat;
+                    background-position: center;
+                    background-size: auto;
+                    transition: background-color 1s;
+                }
+                  .contact:hover {
+                    background-color: $light_green;
+                    background-image: url(../components/nav/src/telefon_bialy.png);
+                    background-repeat:no-repeat;
+                    background-position: center;
+                    background-size: auto;
+                }
+                .mail {
+                    background-image: url(../components/nav/src/mail.png);
+                    background-repeat:no-repeat;
+                    background-position: center;
+                    background-size: auto;
+                    transition: background-color 1s;
+                }
+                  .mail:hover {
+                    background-color: $light_green;
+                    background-image: url(../components/nav/src/mail_bialy.png);
+                    background-repeat:no-repeat;
+                    background-position: center;
+                    background-size: auto;
+                }
             }
             @include mQ(920px){
         width: 100%; 
-        padding-bottom: 10px;
+                .nav__dodatki--bottom {
+                text-align: center;
+                }
             }
         }
         
@@ -81,12 +133,17 @@
         text-align: center;
         padding: 10px 0;
         font-size: 18px;
+        text-transform: uppercase;
     .nav__main--link,
     .nav__main--special {
             padding: 6px 20px;
             color: #fff;
             border-right: 1px solid #dae2ce;
             margin-left: -4px;
+            transition: background-color 0.5s;
+        &:hover {
+            background-color: $grey_hover;
+        }
         }
         .nav__main--special {
             background-color: #dae2ce;
@@ -133,7 +190,7 @@
   height: 40px;
   display: block;
   position: fixed;
-  top: 177px;
+  top: 156px;
     overflow: hidden;
     .hamburger__icon {
   width: 30px;
@@ -223,146 +280,10 @@ span:nth-child(3) {
 
         }
 }
-.nav__logform--inactive {
-    display: none;
-}
 
-.nav__logform--active {
-    position: absolute;
-    top: 90px;
-    width: 310px;
-    background-color: $light_green;
-    padding-top: 10px;
-    text-align: center;
-    display: block;
-    input {
-        padding: 2% 2%;
-        margin-bottom: 10px;
-        width: 80%;
-        border: none;
-        color: rgb(119, 120, 123);
-        font-size: 16px;
-    }
-    .grey {
-   @include greyBtn;
-    }
-    h2{
-        width: 84%;
-        margin: 0 auto;
-        text-align: left;
-        color:#fff;
-        font-size: 19px;
-        font-weight: bold;
-        text-transform: none;
-        line-height: 2;
-    }
-    p{
-        width: 84%;
-        margin: 0 auto;
-        text-align: left;
-        text-transform: none;
-        color:#fff;
-        font-weight: 200;
-        letter-spacing: 0.5px;
-        line-height: 1.5;
-        margin-bottom: 10px;
-    }
-    .sign{
-        width: 84%;
-        padding: 2% 0;
-        color:#fff;
-        font-size: 14px;
-        font-weight: bold;
-        background-color: $dark_green;
-        margin-bottom: 10px;
-        border: none;
-    }
-    h1 {
-        font-size: 24px;
-        font-weight: bold;
-        color: #fff;
-        margin-bottom: 15px;
-    }
-    @include mQ(920px){
-        width: 100%;
-        top: 177px;
-        z-index: 2;
-    }
-}
 
-.nav__search--inactive {
-    display: none;
-    background-color: $light_green;
-    padding-top: 10px;
-    text-align: center;
-    position: absolute;
-    top: 90px;
-    width: 310px;
-    input {
-        padding: 2% 2%;
-        margin-bottom: 10px;
-        width: 84%;
-        border: none;
-        color: rgb(119, 120, 123);
-        font-size: 16px;
-    }
-    .grey {
-        @include greyBtn;
-    }
-}
 
-.nav__search--active {
-    display: block;
-    background-color: $light_green;
-    padding-top: 10px;
-    text-align: center;
-    position: absolute;
-    top: 90px;
-    width: 310px;
-    input {
-        padding: 2% 2%;
-        margin-bottom: 10px;
-        width: 84%;
-        border: none;
-        color: rgb(119, 120, 123);
-        font-size: 16px;
-    }
-    .grey {
-        @include greyBtn;
-    }
-        @include mQ(920px){
-        width: 100%;
-        top: 177px;
-        z-index: 2;
-    }
-}
 
-.nav__call--inactive {
-    display: none;
-}
-
-.nav__call--active {
-    display: block;
-    background-color: $light_green;
-    padding-top: 10px;
-    text-align: center;
-    position: absolute;
-    top: 90px;
-    width: 310px;
-    color: #fff;
-    .number {
-        font-size: 25px;
-    }
-    p {
-        text-transform: none;
-        padding: 5px 0;
-    }
-        @include mQ(920px){
-        width: 100%;
-        top: 177px;
-        z-index: 2;
-    }
-}
 
 
 
