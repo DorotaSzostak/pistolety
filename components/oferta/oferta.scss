@@ -1,0 +1,121 @@
+.oferta {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    max-width: 100%;
+    border-bottom: 2px solid #f0f0f0;
+    padding: 0 5%;
+    .oferta__text {
+        flex-basis: 48%;
+        flex-grow: 1;
+        padding: 1% 1%;
+    .oferta__text--title {
+      font-size: 36px;
+      color: $grey_hover;
+      font-weight: bold;
+      padding: 5% 0;
+        @include mQ(425px){
+            font-size: 24px;
+        }
+    }
+    .oferta__text--content {
+      font-size: 16px;
+      line-height: 1.5;
+      color: $grey_hover;
+      padding: 10px 0;
+      font-weight: 300;
+    } 
+    }
+
+    .oferta__bannerSmall {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-image: url(../components/oferta/src/tlo.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: #fff;
+        flex-basis: 24%;
+        flex-grow: 1;
+        padding: 1% 0 1% 1%;
+        .oferta__bannerSmall--title {
+      font-size: 30px;
+      font-weight: bold;
+      align-self:stretch;
+        @include mQ(425px){
+            font-size: 24px;
+        }
+        }
+        .oferta__bannerSmall--content {
+        font-size: 16px;
+        line-height: 1.5;
+        font-weight: 300;
+        }
+    }
+    .oferta__newsletter {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: $light_green;
+        flex-basis: 24%;
+        flex-grow: 1;
+        padding: 1% 0 1% 1%;
+        color: #fff;
+        @include mQ(425px){
+            align-items: center;
+        }
+    }
+    .oferta__newsletter--title {
+      font-size: 36px;
+      font-weight: bold;
+      padding: 5% 0;
+    }
+    .oferta__newsletter--content {
+      font-size: 16px;
+      line-height: 1.5;
+      font-weight: 300;
+    }
+    input {
+        width: 90%;
+        border: none;
+        padding: 5px;
+        font-weight: 300;
+    }
+        .newsletter--checkbox {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        padding: 5% 0;
+    input[type="checkbox"] {
+    width:12px;
+    height:12px;
+    background-color: #fff;
+    margin: 0;
+    color: rgb(119, 120, 123)
+}
+    label {
+        font-size: 12px;
+        font-weight: 300;
+        text-align:left;
+        padding-left: 4%;
+        line-height: 1.5;
+    } 
+    }
+    
+    .sign {
+        width: 90%;
+        padding: 2% 0;
+        color:#fff;
+        font-size: 14px;
+        font-weight: bold;
+        background-color: $dark_green;
+        margin-bottom: 10px;
+        border: none;
+    }
+    @include mQ(920px){
+        padding: 0;
+    }
+}
+

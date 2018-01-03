@@ -3,7 +3,7 @@
     flex-wrap: wrap;
     max-width:100%;
     margin: auto;
-    padding: 0 5%;
+    padding: 2% 5%;
     border-bottom: 2px solid #f0f0f0;
     justify-content: center;
     .recommended--title {
@@ -49,12 +49,18 @@
                 font-weight: bold;
                 color: $grey_hover;
                 align-self: center;
+            @include mQ(425px){
+            font-size: 18px;
+        }
             }
             .products--text{
                 font-size: 16px;
                 line-height: 1.5;
                 text-align: left;
                 color: $grey_hover;
+            @include mQ(425px){
+            font-size: 12px;
+        }
             hr {
                 background-color: #f0f0f0;
                 height: 2px;
@@ -63,6 +69,9 @@
             }
         }
     }
+        @include mQ(425px){
+            width: 100%;
+        }
 }
     .button {
         width: 100%;
@@ -77,6 +86,10 @@
         color: #fff;
         background-color: $dark_green;
         border: none;
+            @include mQ(425px){
+            width: 60%;
+            font-size: 18px;
+        }
     }
     }
    

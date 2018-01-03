@@ -1,0 +1,26 @@
+footer {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    padding: 2%;
+    border-top: 2px solid #f0f0f0;
+    .footer__nav {
+        color: $grey_hover;
+        .nav--link {
+            color: $grey_hover;
+            padding: 0 5px;
+            &:hover {
+                color: $dark_green;
+                transition: color 0.5s;
+            }
+        }
+        .nav--link:nth-of-type(2){
+            border-left: 1px solid $grey_hover;
+            border-right: 1px solid $grey_hover;
+        }
+        p {
+            text-align: right;
+            padding-top: 10px;
+        }
+    }
+}
