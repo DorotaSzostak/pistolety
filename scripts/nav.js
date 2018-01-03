@@ -36,4 +36,4 @@ koperta.addEventListener("click", function(){
 kabury.addEventListener("click", function(){
     var drop = document.getElementById("dropdown");
     drop.classList.toggle("dropdown--active");
-})
+});

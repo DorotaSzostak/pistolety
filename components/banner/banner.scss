@@ -1,10 +1,48 @@
+
+
 .banner {
     padding-top: 100px;
+    z-index: -1;
     @include mQ(920px){
         padding-top: 180px;
     }
     .slider--img {
     width: 100%;
+    max-height: 600px;
 }
+    .arrow {
+        position: relative;
+        top: -120px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
 }
 
+.dots__container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -640px;
+    li {
+        background-color: $grey_hover;
+        margin-left: 3px;
+        height: 10px;
+        width: 10px;
+    }
+        button {
+        font-size: 0;
+        height: 0px;
+        width: 0px;
+        border: none;
+        background-color: transparent;
+    }
+    .slick-active {
+        background-color: $light_green;
+    }
+    @include mQ(1024px){
+        top: -480px;
+    }
+    @include mQ(920px){
+        top:-350px;
+    }
+}

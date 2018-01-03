@@ -28,7 +28,9 @@ footer, header, hgroup, menu, nav, section {
 
 body {
   line-height: 1;
-  font-family: 'Oswald'; }
+  font-family: 'Oswald';
+  max-width: 2400px;
+  margin: auto; }
 
 ol, ul {
   list-style: none; }
@@ -54,12 +56,50 @@ input {
   -webkit-appearance: none; }
 
 .banner {
-  padding-top: 100px; }
+  padding-top: 100px;
+  z-index: -1; }
   @media screen and (max-width: 920px) {
     .banner {
       padding-top: 180px; } }
   .banner .slider--img {
-    width: 100%; }
+    width: 100%;
+    max-height: 600px; }
+  .banner .arrow {
+    position: relative;
+    top: -120px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%); }
+
+.dots__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: relative;
+  top: -640px; }
+  .dots__container li {
+    background-color: #4e565a;
+    margin-left: 3px;
+    height: 10px;
+    width: 10px; }
+  .dots__container button {
+    font-size: 0;
+    height: 0px;
+    width: 0px;
+    border: none;
+    background-color: transparent; }
+  .dots__container .slick-active {
+    background-color: #97ac79; }
+  @media screen and (max-width: 1024px) {
+    .dots__container {
+      top: -480px; } }
+  @media screen and (max-width: 920px) {
+    .dots__container {
+      top: -350px; } }
 
 .clients {
   max-width: 94%;
@@ -149,7 +189,6 @@ footer {
 
 .nav__wrapper {
   width: 100%;
-  max-width: 2400px;
   position: fixed;
   background-color: #fff; }
   .nav__wrapper .nav__top {
