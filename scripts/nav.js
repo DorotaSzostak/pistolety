@@ -12,6 +12,8 @@ var lupka = document.getElementById("lupka");
 var telefon = document.getElementById("contact");
 var koperta = document.getElementById("mail");
 var kabury = document.getElementById("kabury");
+var pistolety = document.getElementById("item1");
+var karabiny = document.getElementById("item2");
 
 koszyk.addEventListener("click", function(){
     var sign = document.getElementById("form");
@@ -36,4 +38,26 @@ koperta.addEventListener("click", function(){
 kabury.addEventListener("click", function(){
     var drop = document.getElementById("dropdown");
     drop.classList.toggle("dropdown--active");
+});
+
+pistolety.addEventListener("click", function(){
+    if(window.innerWidth <= 920) {
+         var link = document.getElementById("category--item1");
+        if(link.style.display === "flex"){
+            link.style.display = "none";
+        } else {
+            link.style.display = "flex";
+        }
+    } 
+    });
+karabiny.addEventListener("click", function(){
+    if(window.innerWidth <= 920) {
+         var link = document.getElementById("category--item2");
+        if(link.style.display === "none"){
+            link.style.display = "flex";
+        } else {
+            link.style.display = "none";
+        }
+        
+    }  
 });

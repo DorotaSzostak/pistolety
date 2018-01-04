@@ -43,6 +43,6 @@
         top: -480px;
     }
     @include mQ(920px){
-        top:-350px;
+        display: none;
     }
 }
