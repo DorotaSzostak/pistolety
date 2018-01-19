@@ -20,4 +20,8 @@
         background-color: #4e565a;
         margin-bottom: 10px;
         border: none;
+    &:hover {
+        background-color: $dark_green;
+        transition-duration: 0.5s; 
+    }
 }

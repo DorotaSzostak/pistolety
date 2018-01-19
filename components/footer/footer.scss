@@ -22,5 +22,8 @@ footer {
             text-align: right;
             padding-top: 10px;
         }
+        @include mQ(450px){
+            font-size: 12px;
+        }
     }
 }

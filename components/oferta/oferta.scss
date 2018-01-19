@@ -113,6 +113,10 @@
         background-color: $dark_green;
         margin-bottom: 10px;
         border: none;
+        &:hover {
+            background-color: $grey_hover;
+            transition: 0.5s;
+        }
     }
     @include mQ(920px){
         padding: 0;
