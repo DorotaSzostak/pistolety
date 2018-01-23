@@ -1,0 +1,38 @@
+{
+    "products":[
+        {
+            "id": 1,
+            "price": 100,
+            "image": "https://dummyimage.com/295x295/335217/ffffff.png",
+            "name": "Glock 50, najlepsza generacja",
+            "desription": "Lorem ipsum dolor sit amet, et hinc aliquip interpretaris vel, mollis inimicus similique vis ea. Eleifend pertinacia adipiscing nec eu. Veritus adipisci his ad, ne sed alii case summo",
+            "category": "pistols"
+        },
+        
+        {
+            "id": 2,
+            "price": 100,
+            "image": "https://dummyimage.com/295x295/335217/ffffff.png",
+            "name": "Glock 50, najlepsza generacja",
+            "desription": "Lorem ipsum dolor sit amet, et hinc aliquip interpretaris vel, mollis inimicus similique vis ea. Eleifend pertinacia adipiscing nec eu. Veritus adipisci his ad, ne sed alii case summo",
+            "category": "pistols"
+        },
+        {
+            "id": 3,
+            "price": 40,
+            "image": "https://dummyimage.com/295x295/335217/ffffff.png",
+            "name": "Muszka, najlepsza generacja",
+            "desription": "Lorem ipsum dolor sit amet, et hinc aliquip interpretaris vel, mollis inimicus similique vis ea. Eleifend pertinacia adipiscing nec eu. Veritus adipisci his ad, ne sed alii case summo",
+            "category": "muszki"
+        },
+        
+        {
+            "id": 4,
+            "price": 40,
+            "image": "https://dummyimage.com/295x295/335217/ffffff.png",
+            "name": "Muszka, najlepsza generacja",
+            "desription": "Lorem ipsum dolor sit amet, et hinc aliquip interpretaris vel, mollis inimicus similique vis ea. Eleifend pertinacia adipiscing nec eu. Veritus adipisci his ad, ne sed alii case summo",
+            "category": "muszki"
+        }  
+    ]
+}
