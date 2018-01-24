@@ -40,12 +40,12 @@ var btn = document.querySelector("#btn");
 //  alert(error);
 //}
 
-btn.addEventListener("click", function(){
-    var container = document.querySelector('.recommended__container');
-    var newProduct = document.createElement('div');
-    newProduct.setAttribute('class', 'green');
-    container.appendChild(newProduct);
-    var newImg = document.createElement('div');
-    newImg.setAttribute('class', 'products--image');
-    newProduct.appendChild(newImg);
-});
+//btn.addEventListener("click", function(){
+//    var container = document.querySelector('.recommended__container');
+//    var newProduct = document.createElement('div');
+//    newProduct.setAttribute('class', 'green');
+//    container.appendChild(newProduct);
+//    var newImg = document.createElement('div');
+//    newImg.setAttribute('class', 'products--image');
+//    newProduct.appendChild(newImg);
+//});
