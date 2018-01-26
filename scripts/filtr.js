@@ -4,34 +4,46 @@ var $grid = $('.recommended__container').isotope({
   layoutMode : 'fitRows'
 });
 
-$('.filters__container').on( 'click', 'button', function() {
-  var filterValue = $( this ).attr('data-filter');
+$('.btn__filter').on( 'change', function() {
+  var filterValue = this.value;
     
   $grid.isotope({ filter: filterValue });
 
 })
 
+//$('.container').infiniteScroll({
+//  // options
+//  path: addItems,
+//  append: '.recommended__products',
+//  scrollThreshold: 100,
+//  history: false,
+//});
+
 //$('#btn').on('click', function(){
 //    addItems();
 //});
-
-//function addItems  (data){
-//    for(var i=0; i < data.length; i++){
+//    
+//
+//function addItems  (){
+//    var price= 100
 //    var $newProduct = $('<div class="recommended__products"></div>');
 //    var $newProductsShop = $('<div class = "products--shop"</div>')
-//    $newProductsShop.prepend('<a class="cena" href="#">' + data[i].price + ',<span>00 -</span></a><img src="components/recommended/src/dodaj.png" alt="koszyk zakupowy">');
+//    $newProductsShop.prepend('<a class="cena" href="#">' + price + ',<span>00 -</span></a><img src="components/recommended/src/dodaj.png" alt="koszyk zakupowy">');
 //    var $newImage = $('<div class="products--image"</div>')
 //    $newImage.prepend('<img src="components/recommended/src/Layer%20196.png" alt="klucz do ustawiania muszki">')
 //    $newProduct.append($newProductsShop, $newImage);
 //    $grid.append($newProduct).isotope('appended', $newProduct);
-//    }
-//
+//    
+//    
+//    
 //}
 
-var products;
-var url = "http://localhost:3000/products"
+$(window).scroll(function() {
+    if($(window).scrollTop() == $(document).height() - $(window).height()) {
+           // ajax call get data from server and append to the div
+         var url = "http://localhost:3000/products"
 
-$('#btn').click(function(){
+//$('#btn').click(function(){
     $.ajax({
         method: "GET",
         url: "http://localhost:3000/products",
@@ -41,6 +53,7 @@ $('#btn').click(function(){
     .done(function(data){
         for(var i=0; i < data.length; i++){
         var $newProduct = $('<div class="recommended__products"></div>');
+            $newProduct.addClass(data[i].category);
         var $newProductsShop = $('<div class = "products--shop"</div>')
         $newProductsShop.prepend('<a class="cena" href="#">' + data[i].price + ',<span>00 -</span></a><img src="components/recommended/src/dodaj.png" alt="koszyk zakupowy">');
         var $newImage = $('<div class="products--image"</div>')
@@ -51,7 +64,12 @@ $('#btn').click(function(){
         $grid.append($newProduct).isotope('appended', $newProduct);
     }
     })
+//}); 
+
+    }
 });
+  
+
 
 
 

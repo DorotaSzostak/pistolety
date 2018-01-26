@@ -164,13 +164,44 @@
             </div>
         </header>
                <section class="filters">
+               <h2 class="filters__results">Wynik filtrowania (<span>53/102</span>)</h2>
             <div class="filters__container">
-                <button class= "btn__filter" data-filter="*">Pokaż wszystko</button>
-                <button class= "btn__filter" data-filter=".pistols">Pistolety</button>
-                <button class= "btn__filter" data-filter=".muszki">Muszki</button>
-                <button class= "btn__filter" data-filter=".accessories">Akcesoria</button>
+                <select class= "btn__filter producent">
+                    <option value="*">Producent</option>
+                    <option value="*">Wszystko</option>
+                    <option value=".pistols">Pistolety</option>
+                    <option value=".muszki">Muszki</option>
+                    <option value=".accessories">Akcesoria</option>
+                </select>
+                <select class= "btn__filter produkcja">
+                    <option value="*">Produkcja</option>
+                    <option value="*">Wszystko</option>
+                    <option value=".pistols">Pistolety</option>
+                    <option value=".muszki">Muszki</option>
+                    <option value=".accessories">Akcesoria</option>
+                </select>
+                <input class="cena" type="number" placeholder="Cena od">
+                <input class="cena" type="number" placeholder="Cena do">
+                <select class= "btn__filter">
+                    <option value="*">Cena rosnąco</option>
+                </select>
+                <select class= "btn__filter promo">
+                    <option value="*">Tylko promocje</option>
+                </select>
+                <select class= "btn__filter kaliber">
+                    <option value="*">Kaliber</option>
+                </select>
+                <select class= "btn__filter waga">
+                    <option value="*">Waga</option>
+                </select>
+            </div>
+            <div class="filters__selection">
+                <p>Producent:<span>Glock</span></p>
+                <p>Produkcja:<span>USA</span></p>
+                <p>Kaliber:<span>9mm</span></p>
             </div>
                </section>
+               
                 <section class="recommended">
 
             <h1 class="recommended--title">Polecamy w naszej ofercie</h1>
@@ -289,13 +320,22 @@
             </div>
             
                     </div>
-            <div class="button" id="btn">
-                <button class="more">Więcej</button>
-            </div>
             
         </section>
+        <footer>
+            <div class="footer__social">
+                <img class="social--icon" src="components/footer/src/fb.png" alt="facebook icon">
+                <img class="social--icon" src="components/footer/src/yt.png" alt="youtube icon">
+            </div>
+            <div class="footer__nav">
+                <a href="#" class="nav--link">Polityka prywatności</a>
+                <a href="#" class="nav--link">Regulamin sklepu</a>
+                <a href="#" class="nav--link">Mapa strony</a>
+                <p>Realizacja WawMedia 2017 dla KALIBER 7.62</p>
+            </div>
+        </footer>
         <script src="scripts/nav.js"></script>
-        <script src="scripts/infinitescroll.js"></script>
+<!--        <script src="scripts/infinitescroll.js"></script>-->
         <script src="https://code.jquery.com/jquery-3.2.1.min.js"
       integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
       crossorigin="anonymous"></script>
