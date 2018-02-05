@@ -1,3 +1,21 @@
+var arrowBtn = document.querySelector(".filters__arrow");
+
+arrowBtn.addEventListener('click', function(){
+    var sekcja = document.querySelector(".filters__hidden");
+    var sekcja2 = document.querySelector(".filters__selection");
+    var results = document.querySelector(".filters__results");
+    arrowBtn.classList.toggle("arrow__clicked");
+    if(sekcja.classList.contains("filters__container")){
+        sekcja.classList.remove("filters__container");
+        sekcja2.style.display = "none";
+        results.style.display = "none";
+    } else { 
+        sekcja.classList.add("filters__container");
+        sekcja2.style.display = "block";
+        results.style.display = "inline-block";
+    }
+});
+
 var $grid = $('.recommended__container').isotope({
   // options
   itemSelector : '.recommended__products',
@@ -11,39 +29,11 @@ $('.btn__filter').on( 'change', function() {
 
 })
 
-//$('.container').infiniteScroll({
-//  // options
-//  path: addItems,
-//  append: '.recommended__products',
-//  scrollThreshold: 100,
-//  history: false,
-//});
-
-//$('#btn').on('click', function(){
-//    addItems();
-//});
-//    
-//
-//function addItems  (){
-//    var price= 100
-//    var $newProduct = $('<div class="recommended__products"></div>');
-//    var $newProductsShop = $('<div class = "products--shop"</div>')
-//    $newProductsShop.prepend('<a class="cena" href="#">' + price + ',<span>00 -</span></a><img src="components/recommended/src/dodaj.png" alt="koszyk zakupowy">');
-//    var $newImage = $('<div class="products--image"</div>')
-//    $newImage.prepend('<img src="components/recommended/src/Layer%20196.png" alt="klucz do ustawiania muszki">')
-//    $newProduct.append($newProductsShop, $newImage);
-//    $grid.append($newProduct).isotope('appended', $newProduct);
-//    
-//    
-//    
-//}
-
 $(window).scroll(function() {
     if($(window).scrollTop() == $(document).height() - $(window).height()) {
            // ajax call get data from server and append to the div
          var url = "http://localhost:3000/products"
 
-//$('#btn').click(function(){
     $.ajax({
         method: "GET",
         url: "http://localhost:3000/products",
@@ -63,8 +53,7 @@ $(window).scroll(function() {
         $newProduct.append($newProductsShop, $newImage, $newDescription);
         $grid.append($newProduct).isotope('appended', $newProduct);
     }
-    })
-//}); 
+    });
 
     }
 });

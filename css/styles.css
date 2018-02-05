@@ -186,12 +186,33 @@ input {
   width: 80%;
   margin: 0 auto; }
   .filters .filters__results {
-    font-size: 20px;
-    color: grey; }
+    font-size: 24px;
+    color: #4e565a;
+    display: none; }
+  .filters .filters__arrow {
+    display: inline-block;
+    float: right;
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg); }
+  .filters .arrow__clicked {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+    display: inline-block;
+    float: right; }
+  .filters .filters__hidden {
+    padding-top: 0;
+    height: 0;
+    overflow: hidden;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease; }
   .filters .filters__container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    height: auto;
     -ms-flex-line-pack: start;
     align-content: flex-start;
     -webkit-box-align: center;
@@ -200,7 +221,7 @@ input {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     padding: 1%;
-    margin-top: 10px;
+    margin-top: 20px;
     background-color: #ededed; }
     .filters .filters__container .btn__filter {
       width: 300px;
@@ -237,6 +258,7 @@ input {
       .filters .filters__container .cena::placeholder {
         color: #000; }
   .filters .filters__selection {
+    display: none;
     background-color: #97ac79;
     padding: 10px 15px; }
     .filters .filters__selection p {
